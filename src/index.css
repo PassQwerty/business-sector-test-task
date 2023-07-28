@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  user-select: none;
+}
+
+@layer base {
+  body {
+    @apply flex min-h-screen flex-col overflow-x-hidden;
+  }
+
+  .container {
+    @apply ml-auto mr-auto max-w-7xl pl-4 pr-4;
+  }
+}
