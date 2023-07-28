@@ -11,7 +11,7 @@ const tailwindStyles = {
 const PaginationLogic = () => {
   const data = useSelector((state: RootState) => state.data.sortedPost);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsLimit, setPostsLimit] = useState(6);
+  const [postsLimit] = useState(6);
 
   const lastPostIndex = Math.min(currentPage * postsLimit, data.length);
   const firstPostIndex = lastPostIndex - postsLimit;
